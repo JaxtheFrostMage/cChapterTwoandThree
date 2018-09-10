@@ -24,17 +24,18 @@ int main()
 	double enchiladaCost = 1.00;
 	double softDrinkCost = 6.00;
 
-	cout << "**************************************************************" << endl;
-	cout << "* " << endl;
-	cout << "* " << endl;
-	cout << "* " << endl;
-	cout << "* " << endl;
-	cout << "* " << endl;
-	cout << "* " << endl;
-	cout << "* " << endl;
-	cout << "**************************************************************" << endl;
-	cout << "* " << endl;
-	cout << "* " << endl;
+	cout << "  ***************************************************" << endl;
+	cout << "  *                 __________________          [    *" << endl;
+	cout << "  *                !                  !         [     *" << endl;
+	cout << "  *                !                  !         [_______*" << endl;
+	cout << "  *                !__________________!                   **" << endl;
+	cout << "  *                  Delgados' Tacos                         *" << endl;
+	cout << "  *                                                          *" << endl;
+	cout << "  *                                                          *" << endl;
+	cout << "  ************************************************************" << endl;
+	cout << "               *   *                           *   *      " << endl;
+	cout << "                ***                             ***       " << endl;
+
 
 	cout << "How many tacos would you care to purchase? ";
 	cin >> tacos;
