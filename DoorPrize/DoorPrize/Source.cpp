@@ -12,27 +12,24 @@ int doorGame()
 {
 	int userDoorChoice;
 	do {
-	cout << "Choose one of the three doors, one will save you, one will hurt you, the other will end you. \ndoor1/door2/door3 ";
-	cin >> userDoorChoice;
+		cout << "Choose one of the three doors, one will save you, one will hurt you, the other will end you. \ndoor1/door2/door3 ";
+		cin >> userDoorChoice;
 
-	if (userDoorChoice == 1)
-		
-			{
-				cout << " (You reach your hand to the nob and as you do a spring loaded bear trap bites into your hand) \n The wrong door " << endl;
-			}
-		
-	else if (userDoorChoice == 2)
-	{
-		cout << "The door opens and you see a blinding light in the distance, it is the sun. \n Always take the right doors in life. " << endl;
-		}
-	else if (userDoorChoice == 3)
-	{
-		cout << "the door opens and you see a blinding light in the distance, it is the sun. as you step towards it you feel the ground below you crumble and you fall to your death. \n the wrong door and your last. " << endl;
-		}
+		switch (userDoorChoice)
+		{
+		case '1':
+			cout << " (You reach your hand to the nob and as you do a spring loaded bear trap bites into your hand) \n The wrong door " << endl;
+			break;
 
-	else 
-	{
-		cout << "then you choose death. " << endl;
+		case '2':
+			cout << "The door opens and you see a blinding light in the distance, it is the sun. \n Always take the right doors in life. " << endl;
+			break;
+		case '3':
+			cout << "the door opens and you see a blinding light in the distance, it is the sun. as you step towards it you feel the ground below you crumble and you fall to your death. \n the wrong door and your last. " << endl;
+			break;
+
+		default:
+			cout << "then you choose death. " << endl;
 		}
 	} while (userDoorChoice != 4);
 	return 0;
