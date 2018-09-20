@@ -39,20 +39,23 @@ int randomGame()
 {
 	int numChoice;
 	int secret;
+	int attempts = 1;
 	srand(time(NULL));
 	secret = rand() % 10 + 1;
+	do {
+		cout << "A knack for gambling, are you willing to take the chance with lady luck? ";
+		cin >> numChoice;
 
-	cout << "A knack for gambling, are you willing to take the chance with lady luck? ";
-	cin >> numChoice; 
-
-	if (numChoice == secret)
-	{
-		cout << "The odds are in your favor..." << endl;
-	}
-	else
-	{
-		cout << "It seems you've run out of luck... " << secret << endl;
-	}
+		if (numChoice == secret)
+		{
+			cout << "The odds are in your favor..." << "it seems it took you " << attempts << " trys..." << endl;
+		}
+		else
+		{
+			cout << "It seems you've run out of luck... " << secret << endl;
+			attempts = attempts + 1;
+		}
+	}while ()
 	return 0;
 }
 
