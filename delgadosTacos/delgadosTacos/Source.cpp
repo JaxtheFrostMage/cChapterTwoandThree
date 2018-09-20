@@ -68,6 +68,8 @@ int main()
 			cout << "How many soft drinks would you care to purchase? ";
 			cin >> softDrinks;
 		}
+		else if (choice == 6)
+			cout << "Thank you for eating at Delgados' Tacos, have a great day. " << endl;
 		else
 		{
 			cout << "i'm sorry, thats not an option." << endl;
