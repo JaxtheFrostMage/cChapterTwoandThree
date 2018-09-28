@@ -12,28 +12,17 @@ double convert(double fahren)
 	return r;
 }
 int main()
-{
-	double temp1 =0;
-	double temp2 =0;
-	double temp3 =0;
+{ 
 	double z;
+	double tempArray[5] = { 0.0 };
 
-	cout << "What was the tempature at 8:00 am? ";
-	cin >> temp1;
-
-	cout << "What was the tempature at 12:00 pm? ";
-	cin >> temp2;
-
-	cout << "What was the tempature at 5:00 pm? ";
-	cin >> temp3; 
-
-	z = convert(temp1);
-	cout << "your tempature at 8:00 am is  " << temp1 << " in Fahrenheit and " << z << " Celcius." << endl;
-	z = convert(temp1);
-	cout << "your tempature at 8:00 am is  " << temp1 << " in Fahrenheit and " << z << " Celcius." << endl;
-	z = convert(temp1);
-	cout << "your tempature at 8:00 am is  " << temp1 << " in Fahrenheit and " << z << " Celcius." << endl;
-
+	for (int i = 0; 1 <= size(tempArray); i++) {
+		cout << "Enter A tempature >>";
+		cin >> tempArray[i];
+		z = convert(tempArray[i]);
+		cout << "your temp conversion is "<< z << endl;
+	}
+	
 	system("pause");
 	return 0;
 }
